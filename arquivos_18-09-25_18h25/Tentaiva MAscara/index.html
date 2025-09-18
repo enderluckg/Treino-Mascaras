@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="div1">
+    <div id="divtxt1">Formulario</div>
+    
+    <div id="org1">
+    <div>Nome</div>
+    <input type="text">
+    <div>Endereço</div>
+    <input type="text">
+    <div>CPF</div>
+    <input type="text" id="inpCPF" oninput="mascara_cpf()" maxlength="14" >
+    <div>Telefone</div>
+    <input type="text" id="inpNUM" oninput="mascara_num()" maxlength="15">
+    <div>CEP</div>
+    <input type="text" id="inpCEP" oninput="mascara_cep()" maxlength="10">
+    <div>CNPJ</div>
+    <input type="text" id="inpCNPJ" oninput="mascara_cnpj()" maxlength="18" upercase>
+    <div>Codigo</div>
+    <input type="text" id="inpCOD" oninput="mascara_cod()" maxlength="19" upercase>
+    </div>
+    <button onclick="alerta()">ENVIAR</button>    
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
